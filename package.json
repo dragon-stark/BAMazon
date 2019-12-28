@@ -1,0 +1,24 @@
+{
+  "name": "12-mysql-bamazon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dragon-stark/BAMazon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dragon-stark/BAMazon/issues"
+  },
+  "homepage": "https://github.com/dragon-stark/BAMazon#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "inquirer": "^7.0.1",
+    "mysql": "^2.17.1"
+  }
+}
