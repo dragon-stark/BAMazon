@@ -20,50 +20,20 @@ VALUES
     "Cards Against Humanity",
     "Toys & Games",
     10.00,
-    50
+    25
   ),
   ("Teddy Bear", "Toys & Games", 5.00, 10),
   ("Barbie", "Toys & Games", 10.00, 15),
   ("Action Figure", "Toys & Games", 10.00, 20),
-  (
-    "Xbox Gift Cards",
-    "Toys & Games",
-    10.00,
-    50
-  ),
-  (
-    "Nintendo Game",
-    "Toys & Games",
-    50.00,
-    25
-  ),
-  (
-    "Monopoly Game",
-    "Toys & Games",
-    30.00,
-    10
-  ),
+  ("Xbox Gift Cards", "Toys & Games", 10.00, 25),
+  ("Nintendo Game", "Toys & Games", 50.00, 25),
+  ("Monopoly Game", "Toys & Games", 30.00, 10),
   (
     "What do you Meme Game",
     "Toys & Games",
     10.00,
     10
   ),
-  (
-    "Kinetic Sand",
-    "Toys & Games",
-    2.00,
-    100
-  ),
-  (
-    "UNO Card Game",
-    "Toys & Games",
-    4.00,
-    15
-  ),
-  (
-    "Poker Card Game",
-    "Toys & Games",
-    8.00,
-    20
-  );
+  ("Kinetic Sand", "Toys & Games", 2.00, 10),
+  ("UNO Card Game", "Toys & Games", 4.00, 15),
+  ("Poker Card Game", "Toys & Games", 8.00, 15);
