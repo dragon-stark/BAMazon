@@ -51,7 +51,7 @@ function start ()
   }
   ]).then(function (input)
   {
-
+    console.log(start)
     var item = input.item_id;
     var orderQuantity = input.orderQuantity;
 
