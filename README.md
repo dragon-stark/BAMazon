@@ -2,7 +2,7 @@
 
 ## Bamazon will take in orders from customers and deplete stock from the store's inventory following any sale.
 
-This **_*CLI*_** application is a great example of **_MySQL_**, **_Inquirer_** npm **_Node_** packages for storage and data input.
+This **_*CLI*_** application is a great example of **_MySQL_**, **_Inquirer_** and **_Node_** npm packages for storage and data input.
 
 ![Welcome to bamazon!](Bamazon.gif)
 
