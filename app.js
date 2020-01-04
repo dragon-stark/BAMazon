@@ -44,16 +44,16 @@ function start ()
   },
   {
     type: "input",
-    name: "stock_quantity",
+    name: "orderQuantity",
     message: "Please enter a quantity for your item",
     validate: validateInput,
     filter: Number
   }
   ]).then(function (input)
   {
-    // this pulls from the database
+
     var item = input.item_id;
-    var quantity = input.stock_quantity;
+    var orderQuantity = input.orderQuantity;
 
     var queryStr = "SELECT * FROM products WHERE ? ";
 
@@ -65,14 +65,16 @@ function start ()
         displayInventory();
       } else {
         var productData = data[0];
-        if (quantity <= productData.quantity) {
-          console.log(chalk.yellowBright("Great, you have succesfully placed your order."));
-          var updateQueryStr = "UPDATE products SET stock_quantity = " + (productData.quantity - quantity) + "WHERE item_id = " + item;
-
-          connection.query(updateQueryStr, function (err, data)
+        // checks to make sure there is enough quantity in stock for order
+        if (orderQuantity <= productData.stock_quantity) {
+          // use line 58-60 instead instead of this format
+          var updateProductQuantity = "UPDATE products SET stock_quantity = " + (productData.stock_quantity - orderQuantity) + " WHERE item_id = " + item;
+          connection.query(updateProductQuantity, function (err, data)
           {
+
             if (err) throw err;
-            console.log(chalk.yellowBright("Your order has been placed. Your total is $" + productData.price * quantity));
+            console.log(chalk.yellowBright("Your order has been placed. Your total is $" + productData.price * orderQuantity));
+            console.log(chalk.yellowBright("Great, you have succesfully placed your order."));
             console.log(chalk.blueBright("Thank you for shopping Bamazon."))
 
             connection.end();
