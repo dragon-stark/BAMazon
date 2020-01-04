@@ -105,7 +105,7 @@ function displayInventory ()
       allItems += "Department: " + data[i].department_name + "//";
       allItems += "Price: " + data[i].price + "//";
 
-      console.log(chalk.blueBright.bold(allItems));
+      console.log(chalk.blueBright.bold(allItems) + chalk.yellowBright('!'));
     }
     start();
   })
