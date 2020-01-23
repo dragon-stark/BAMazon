@@ -2,6 +2,8 @@
 
 ## Bamazon will take in orders from customers and deplete stock from the store's inventory following any sale.
 
+**[Deployed Application](https://dashboard.heroku.com/apps/bamazon-application/deploy/github)**
+
 This **_*CLI*_** application is a great example of **_MySQL_**, **_Inquirer_** and **_Node_** npm packages for storage and data input.
 
 ![Welcome to bamazon!](Bamazon.gif)
